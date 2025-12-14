@@ -1,0 +1,20 @@
+name: mosaics
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - gdal
+  - pip
+  - cudatoolkit  # If you need GPU support, typically from 'conda-forge' or 'nvidia' channel
+  - pip:
+    - rasterio
+    - shapely
+    - folium
+    - cupy-cuda12x==13.1
+    - dask
+    - dask-cuda
+    - omnicloudmask
+    - geopandas
+    - attrs
+    - bokeh>=3.1.0

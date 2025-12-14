@@ -1,0 +1,28 @@
+{
+    "target_crs": "EPSG:32615",
+    "bbox": "Arkansas_5000mbuffer.gpkg",
+    "start_data": "2025-10-01",
+    "end_date": "2025-10-31",
+    "endpoint": "https://earth-search.aws.element84.com/v1",
+    "download_dir": "./MosaicData/downloaded_data",
+    "bands_to_download": ["B02" ,"B03", "B04", "B08", "SCL"],
+    "cleaned_dir": "./MosaicData/cleaned_data",
+    "output_dir": "./MosaicData/outputs",
+    "output_filename_base": "Arkansas_S2_RGBNIR",
+    "collection": "sentinel-2-l2a",
+    "remove_original_files_after_clipping": true,
+    "percentileValue": 25,
+    
+    "backblaze": {
+        "enabled": true,
+        "application_key_id": "",
+        "application_key": "",
+        "bucket_name": "",
+        "bucket_prefix": ""
+    },
+    
+    "slack": {
+        "enabled": true,
+        "webhook_url": ""
+    }
+}

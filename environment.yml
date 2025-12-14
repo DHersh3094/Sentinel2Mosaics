@@ -1,0 +1,25 @@
+name: mosaics
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - gdal
+  - pip
+  - cudatoolkit
+  - pip:
+    - rasterio
+    - shapely
+    - folium
+    - cupy-cuda12x
+    - dask
+    - omnicloudmask
+    - geopandas
+    - attrs
+    - awscli
+    - pystac-client
+    - rasterstats
+    - ukis-pysat[raster]
+    - b2sdk
+    - requests
+    - b2
