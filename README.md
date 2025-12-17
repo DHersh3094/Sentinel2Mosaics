@@ -87,3 +87,7 @@ Final files are named according to the actual date range from start_date to end_
 Reduce `chunk_size` in `omnimask.py` if you get OOM error.
 
 Reduce `GPU_CHUNK_SIZE` in `generate_mosaic.py`
+
+## Bugs / To fix
+
+`generate_mosaic.py` fails if `target_crs` is not in UTM due to the `TARGET_RES_X` and `TARGET_RES_Y` being in meters
